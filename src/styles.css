@@ -8,6 +8,7 @@
 body {
   width: 100%;
   height: 100%;
+  background-color: #4c4c4c;
 }
 
 .watch-container {
@@ -24,6 +25,7 @@ body {
 }
 
 .circle-border-moving {
+  background-color: #4c4c4c;
   position: absolute;
   stroke-dasharray: 847;
   stroke-dashoffset: 847;
@@ -39,5 +41,24 @@ body {
   }
   100% {
     stroke-dashoffset: -847;
+  }
+}
+.fa-heart {
+  position: absolute;
+  color: #f85b5b;
+  top: 58.2%;
+  left: 39%;
+  animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.8);
   }
 }/*# sourceMappingURL=styles.css.map */
