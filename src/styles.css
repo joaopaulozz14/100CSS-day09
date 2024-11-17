@@ -10,45 +10,34 @@ body {
   height: 100%;
 }
 
-/* .watch-container {
-  width: 400px;
-  height: 400px;
+.watch-container {
+  width: 450px;
+  height: 450px;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -200px;
-  margin-left: -200px;
+  margin-top: -250px;
+  margin-left: -250px;
   display: flex;
   align-items: center;
   justify-content: center;
-} */
-svg {
-  position: absolute;
 }
 
 .circle-border-moving {
   position: absolute;
-  stroke-dashoffset: 65;
-  animation: spinner 5s linear infinite;
-  transform-origin: 50% 50%;
-  fill: green;
-  transform: rotate(-90deg);
+  stroke-dasharray: 847;
+  stroke-dashoffset: 847;
+  animation: load 5s linear infinite;
 }
 
-@keyframes spinner {
-  from {
-    stroke-dashoffset: 6;
-    transform: rotate(-90deg) scaleY(1);
+@keyframes load {
+  0% {
+    stroke-dashoffset: 847;
   }
   50% {
     stroke-dashoffset: 0;
-    transform: rotate(-50deg) scaleY(1);
   }
-  50.001% {
-    transform: rotate(-30deg) scaleY(-1);
-  }
-  to {
-    stroke-dashoffset: 625;
-    transform: rotate(0deg) scaleY(-1);
+  100% {
+    stroke-dashoffset: -847;
   }
 }/*# sourceMappingURL=styles.css.map */
